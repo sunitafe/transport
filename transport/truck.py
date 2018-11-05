@@ -1,4 +1,4 @@
-from .vehicle import Vehicle
+from transport.vehicle import Vehicle
 
 class Truck(Vehicle):
 

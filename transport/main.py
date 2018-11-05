@@ -8,11 +8,7 @@ b = Truck('Mack', 'Semi')
 c = Car('Holden', 'Torana')
 d = Truck('Kenworth', 'Monsta')
 
-z = f.addVehicle(a)
-
-'''
 f.addVehicle(a)
 f.addVehicle(b)
 f.addVehicle(c)
 f.addVehicle(d)
-'''

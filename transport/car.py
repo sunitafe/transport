@@ -1,4 +1,4 @@
-from .vehicle import Vehicle
+from transport.vehicle import Vehicle
 
 class Car(Vehicle):
 
@@ -6,3 +6,4 @@ class Car(Vehicle):
 
         super().__init__(make, model)     
         self.type = 'car'
+        self.rego_number = 'ABC123'
