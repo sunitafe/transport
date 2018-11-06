@@ -2,8 +2,10 @@ from transport.vehicle import Vehicle
 
 class Car(Vehicle):
 
-    def __init__(self, make, model):
+    def __init__(self, rego, make, year):
 
-        super().__init__(make, model)     
+        super().__init__(rego, make, year)     
+
         self.type = 'car'
-        self.rego_number = 'ABC123'
+        self.wheels = '4'
+        self.fuel = 'petrol'

@@ -7,6 +7,7 @@ class Fleet:
         self.vehicles = []
         self.depot = Depot(depot)
 
+
     def addVehicle(self, vehicle):
 
         self.vehicles.append(vehicle)
@@ -14,11 +15,15 @@ class Fleet:
 
     def listVehicles(self):
 
-        data = ''
+        data = "\nVehicles in the {depot} fleet:\n".format(depot = self.depot.location)
+        count = 1
 
         for v in self.vehicles:
 
-            data += "{make} {model} {rego}\n".format(make = v.make, model = v.model, rego = v.rego_number)
+            data += str(count) + ": {year} {make} {rego}\n".format(year = v.year, make = v.make, rego = v.rego)
+            count += 1
+
+        data += "\n"
 
         return data
 

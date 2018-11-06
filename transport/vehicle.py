@@ -1,15 +1,23 @@
 class Vehicle:
 
-    rego_number = 'XYZ321'
+    registered_owner = 'Fleet Management Pty Ltd'
 
-    def __init__(self, make, model):
+    def __init__(self, rego, make, year):
 
+        self.rego = rego
         self.make = make
-        self.model = model
-  
-        self.number_of_wheels = 0
-        self.colour = ''
+        self.year = year
+
 
     def describeVehicle(self):
 
-        return "{make} {model} {rego_number}".format(make = self.make, model = self.model, rego_number = self.rego_number)
+        return "Vehicle: {year} {make}\nRegistration Number: {rego}\nOwner: {owner}\nType: {type}\nNumber of Wheels: {wheels}\nFuel: {fuel}\n\n".format(
+            year = self.year, 
+            make = self.make, 
+            rego = self.rego,
+            owner = Vehicle.registered_owner,
+            type = self.type,
+            wheels = self.wheels,
+            fuel = self.fuel)
+
+
