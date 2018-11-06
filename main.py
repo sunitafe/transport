@@ -46,3 +46,10 @@ Print the output of a method in the Vehicle superclass.
 print(a.describeVehicle())
 print(b.describeVehicle())
 
+
+'''
+Dump object structure.
+'''
+print(f.__dict__)
+print(a.__dict__)
+print(a.__class__)
