@@ -1,15 +1,16 @@
 class Vehicle:
 
+    # Class attribute
     registered_owner = 'Fleet Management Pty Ltd'
 
 
     def __init__(self, rego, make, year):
 
+        # Instance attributes
         self.rego = rego
         self.make = make
         self.year = year
-
-        self.colour = "white"
+        self.colour = "white"    # Default colour
 
 
     def describeVehicle(self):
@@ -32,12 +33,14 @@ class Vehicle:
 
         return data
 
-
+ 
+    # Setter method
     def set_colour(self, colour):
 
         self.colour = colour
 
 
+    # Getter method
     def get_colour(self):
 
         return self.colour
